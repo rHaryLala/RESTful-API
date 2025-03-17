@@ -66,7 +66,7 @@ This API allows user management with secure authentication using JWT tokens and 
   [http://localhost:3000/swagger](http://localhost:3000/swagger)
   
 - **Postman Collection:**  
-  You can download the Postman collection [here](link_to_postman_collection).
+  You can download the Postman collection [here](https://github.com/rHaryLala/RESTful-API/blob/master/REST%20API%20on%20NestJs%20-%20CRUD%2C%20test%20%26%20variable.postman_collection.json).
 
 ---
 
