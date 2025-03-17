@@ -25,13 +25,9 @@ This API allows user management with secure authentication using JWT tokens and 
    npm install
    ```
 
-3. **Configure the database in `ormconfig.json` or `.env`:**
+3. **Configure the database in `.env`:**
    ```bash
-   DB_HOST=localhost
-   DB_PORT=5432
-   DB_USERNAME=your_username
-   DB_PASSWORD=your_password
-   DB_NAME=userapi
+   DATABASE_URL="postgres://username:password@localhost:5432/user_api"
    ```
 
 4. **Run the application:**
@@ -39,10 +35,9 @@ This API allows user management with secure authentication using JWT tokens and 
    npm run start
    ```
 
-5. **Database migrations (optional):**
-   If you're using TypeORM, run the migrations to create necessary tables:
+5. **Generate Prisma client**      
    ```bash
-   npm run migration:run
+   npx prisma generate
    ```
 
 ## 📡 Routes API
@@ -64,10 +59,6 @@ This API allows user management with secure authentication using JWT tokens and 
 - **DELETE /api/users/:id**  
   Delete a user (Requires authentication)
 
-### Auth
-
-- **POST /api/auth/refresh-token**  
-  Refresh JWT token when expired
 
 ## 📖 API Documentation
 
